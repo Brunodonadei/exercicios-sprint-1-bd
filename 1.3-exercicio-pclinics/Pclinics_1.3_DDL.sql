@@ -48,3 +48,12 @@ CREATE TABLE Veterinario
 	,Cadastro		INT NOT NULL
 	,Nome			VARCHAR(25) NOT NULL
 );
+
+CREATE TABLE Atendimentos
+(
+	idAtendimento	INT PRIMARY KEY IDENTITY 
+	,Descricao		VARCHAR(200) NOT NULL
+	,DataAtendimento	VARCHAR(100) NOT NULL
+	,idVeterinario	INT FOREIGN KEY REFERENCES Veterinario(idVeterinario)
+	,idPets			INT FOREIGN KEY REFERENCES Pets(idPets)
+);
