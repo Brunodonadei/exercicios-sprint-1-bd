@@ -1,0 +1,9 @@
+USE Pessoas
+
+SELECT * FROM Pessoa
+
+SELECT * FROM CNH
+
+SELECT * FROM Email
+
+SELECT * FROM Telefone
